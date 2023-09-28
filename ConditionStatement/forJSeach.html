@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JS Arrays</h1>
+    <h2>The  foreach() method</h2>
+    <p>forEach() calls a fn for each ele in an arr:</p>
+    <p>Compute the sum of the values in an arr:</p>
+    
+    <blockquote><p>BLOCKQUOTE text looks different</p></blockquote>
+    three<hr/>horizontal tags
+    two<hr/>
+    <p id="demo"></p>
+    <script>
+        let sum=0;
+        const numbers=[65,44,12,4];
+        numbers.forEach(myFunction);
+        document.getElementById("demo").innerHTML=sum;
+        function myFunction(item){
+        sum+= item;
+    }
+
+    </script>
+</body>
+</html>
