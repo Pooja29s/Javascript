@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let courses=['html','css','js','react js'];
+        console.log(courses)
+        courses.length=5
+        document.write('array after increased length:',courses,'<br>')
+        courses.length=2
+        document.write('array after decreased length:',courses,'<br>')
+        var arr1=new Array(3)
+        arr1[0]=10
+        arr1[1]=20
+        arr1[3]=30
+        document.write(arr1,'<br>')
+        var arr2=new Array(5)
+        document.write('array is:',arr2)
+        console.log('value is:',arr2)*/
+
+
+        /*let courses =['html','css','react js']
+        document.write(courses,'<br>')
+        courses.push('angular')
+        document.write('after adding an element',courses,'<br>')
+        documen.write(typeof(courses),'<br>')
+        document.write('using array.isarray()method:',Array.isArray(courses),'<br>')
+        document.write('using instance of method:',courses instanceof Array)*/
+
+
+
+        var ar=Array.from('javascript')
+        //from-the string wll get convert to an array
+        document.write('the resultant is:',ar,'<br>')
+        document.write(ar[1],'<br>')
+        var set=new Set(['c','c++','java','py'])//a set of diff value
+        document.write(Array.from(set),'<br>')
+        document.write(set,'<br>')
+        var res=ar.includes('AngularJs')
+        document.write(res,'<br>')
+        //join it is the ele of an array as a str
+        var arr=['AngularJs','node.js','jquery','js','nxtjs']
+        var result=arr.join('-')
+        document.write(result,'<br>')
+        document.write(arr.pop(),'<br>')
+        document.write(arr.length,'<br>')
+        document.write(arr.sort(),'<br>')
+        document.write(arr.reverse(),'<br>')
+        document.write(arr.slice(1,5),'<br>')
+        var res=arr.findIndex('AngularJs')
+        document.write(res,'<br>')
+        var result=arr.lastIndexOf('nxtjs')
+        document.write(result)
+
+
+
+
+    </script>
+</body>
+</html>
