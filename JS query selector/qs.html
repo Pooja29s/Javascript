@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Queryselector example</h1>
+    <p id="description" class="main">
+        Queryselector power is exceeded only by its mystery.
+    </p>
+    <div id="response">
+        its not that mysterious Queryselector selects elements using the same rules as css selectors.
+    </div>
+    <script>
+        //select the <p> using class selector
+            let main =document.querySelector(".main");
+            console.log(main.innerHTML.trim());
+            main.style.color="blue";
+            //selects the <div> using tag selector
+                let response=document.querySelector("div");
+                console.log(response.innerHTML.trim());
+                response.style.color="red";
+    </script>
+    
+</body>
+</html>

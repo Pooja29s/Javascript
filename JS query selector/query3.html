@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{color:red;}
+        .purple{
+            color:purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>querySelectorAll example</h1>
+    <h2>Red Fruits</h2>
+    <ul class="red">
+        <li>Apple</li>
+        <li>Strawberry</li>
+        <li>Cherry</li>
+    </ul>
+    <h2>Purple Fruits</h2>
+    <ul class="purple">
+        <li>grapes</li>
+        <li>blackcurrant</li>
+        <li>plums</li>
+    </ul>
+    <script>
+        //selects all the li elements and adds text to each one
+        let listItems=document.querySelectorAll("li");
+        for (let i=0;i<listItems.length;i++){
+            listItems[i].innerHTML += "is yummy"
+        }
+        let purpleItems=document.querySelectorAll(".purple li")
+        for (let i=0;i<purpleItems.length;i++){
+            purpleItems[i].innerHTML += "!!!"
+        }
+        //console log the contents of the first items in each list
+        //remember that queryselector returns only the First match
+        let firstRed=document.querySelector(".red li");
+        console.log("contents of first red li:",firstRed.innerHTML);
+        let firstPurple=document.querySelector(".purple li");
+        console.log("contents of first purple li:",firstPurple.innerHTML);
+
+
+    </script>
+
+    
+</body>
+</html>

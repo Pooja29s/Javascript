@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div{
+            border:1px solid black;
+            margin:5px;
+        }
+    </style>
+</head>
+<body style="text-align:center;">
+<h1 style="color:blue;">PoojaSri</h1>
+<h2>querySelectorAll()Method</h2>
+<div id="div">
+    <p>querySelectorAll() in html return a collection elements that match specified CSS selector(s)</p>
+    <p>querySelectorAll() in html return a collection elements that match specified CSS selector(s)</p>
+    <p>querySelectorAll() in html return a collection elements that match specified CSS selector(s)</p>
+    <p>querySelectorAll() in html return a collection elements that match specified CSS selector(s)</p>
+    <p>querySelectorAll() in html return a collection elements that match specified CSS selector(s)</p>
+</div>
+<button onclick="myFunction()">Try it</button>
+<script>
+    function myFunction(){
+        var x=document.getElementById("div").querySelectorAll("p");
+        var i;
+        for (i=0;i<x.length;i++){
+            x[i].style.backgroundColor="skyblue";
+            x[i].style.color="blue";
+        }
+    }
+</script>
+    
+</body>
+</html>
